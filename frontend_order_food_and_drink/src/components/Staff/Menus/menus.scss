@@ -1,0 +1,41 @@
+@use '../../../scss/' as *;
+
+.slider__menu{
+    width: 250px;
+
+    &-list{
+        padding-left: 0;
+        transition: all 0.6s ease-in-out;
+    }
+
+    &-item{
+        list-style: none;
+        padding: 10px 24px;
+        height:50px;
+    }
+
+    &-link{
+        text-decoration:none;
+        display: flex;
+        align-content: center;
+        color: var(--text-color);
+        line-height: 2.5;
+
+        svg{
+            font-size: 1.8rem;
+            align-self: center;
+        }
+
+        &.disable{
+            pointer-events: none;
+            cursor: default;
+            color: $gray-color;
+        }
+    }
+
+    &-name{
+        margin-left: 20px;
+        font-size: 1.4rem;
+        color:var(--text-color);
+    }
+}

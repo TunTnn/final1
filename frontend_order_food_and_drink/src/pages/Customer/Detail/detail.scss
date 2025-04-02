@@ -1,0 +1,120 @@
+@use '../../../scss/' as *;
+
+.product-details {
+    font-size: calc(20/1440*100vw);
+    padding: calc(90/20)+em 0;
+    width: 80%;
+    &__head {
+        display: flex;
+        gap: calc(36/20)+em;
+        margin-bottom: calc(40/20)+em;
+    }
+    &__images {
+        width: 30%;
+        img {
+            width: 100%;
+        }
+        &-sub {
+            width: 100%;
+            display: flex;
+            gap: calc(12/20)+em;
+            margin-top: calc(60/20)+em;
+            height: calc(86/20)+em;
+        }
+    }
+    &__options {
+        hr {
+            border-color: #F6F7F8;
+        }
+        &__name {
+            font-weight: 500;
+            font-size: calc(24/20)+em;
+            line-height: 125%;
+        }
+        &__price {
+            font-weight: 700;
+            font-size: 1em;
+            line-height: 180%;
+            letter-spacing: 0.5px;
+            color: #1AC073;
+        }
+        &__group {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: calc(50/20)+em;
+            &-quantity {
+                display: flex;
+                justify-content: space-between;
+                height: calc(48/20)+em;
+                border-radius: calc(5/20)+em;
+                width: calc(130/20)+em;
+                background-color: #F6F7F8;
+                button {
+                    border: none;
+                    height: 100%;
+                    width: calc(40/20)+em;
+                    background-color: #F6F7F8;
+                }
+                input {
+                    height: 100%;
+                    border: none;
+                    text-align: center;
+                    width: calc(50/16)+em;
+                    background-color: #F6F7F8;
+                    font-weight: 400;
+                    font-size: calc(16/20)+em;
+                    line-height: 125%;
+                }
+            }
+        }
+    }
+    &__submit {
+        font-family: 'ABeeZee';
+        font-style: normal;
+        font-weight: 400;
+        font-size: calc(16/20)+em;
+        line-height: 125%;
+        padding: 1em;
+        color: #1AC073;
+        border: none;
+        border-radius: calc(5/16)+em;
+        svg {
+            margin-right: 1em;
+        }
+    }
+
+    &__desc {
+        background: #FAFAFB;
+        padding: calc(32/20)+em 0;
+        &__title {
+            font-weight: 500;
+            font-size: calc(24/20)+em;
+            line-height: 125%;
+            color: #1AC073;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__related{
+        &__title {
+            font-weight: 500;
+            font-size: calc(24/20)+em;
+            line-height: 125%;
+            color: #1AC073;
+            margin-bottom: 16px;
+        }
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../../../scss/' as *;
+
+.product__recommender{
+    .swiper-button-next {
+        background-image: url(../../../assets/Chervon.svg);
+        // background-repeat: no-repeat;
+        // background-size: 100% auto;
+        // background-position: center;
+    }
+      
+ 
+}

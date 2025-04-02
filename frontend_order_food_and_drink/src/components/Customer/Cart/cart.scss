@@ -1,0 +1,103 @@
+@use '../../../scss/' as *;
+
+.bg-gradient{
+    position: unset;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    // background: rgba(34, 34, 34, 0.3);
+    transition: all .45s ease;
+
+    &.show{
+        position: absolute;
+        transition: all .45s ease;
+        background-color: rgba(31, 33, 37, .5);
+        z-index: 10;
+    }
+}
+
+.block-cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white-color;
+    padding: 20px 0 20px 20px;
+    transform: translateX(800px);
+    transition: all .5s ease;
+    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.5));
+    min-width: 560px;
+    z-index: 10;
+
+    &.show{
+        transform: translateX(0px);
+        transition: all .5s ease;
+    }
+
+    .btn-close-cart{
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    .cart-title{
+        h3{
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            text-transform: capitalize;
+            color: $green-color;
+            margin: 20px 0 48px;
+        }
+    }
+
+    .cart-no-item{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cart-main{
+        overflow-y: scroll;
+        height: calc(100% - 286px);
+    }
+
+    .cart-footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .cart-payment{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px 30px;
+
+            span{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: $text-cart;
+            }
+        }
+
+        .cart-payment-btn{
+            display: block;
+            margin: 0 auto;
+            height: 64px;
+            width: 310px;
+
+            background-color: $green-color;
+            border-radius: 10px;
+            border: none;
+            color: $white-color;
+
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+        }
+    }
+}

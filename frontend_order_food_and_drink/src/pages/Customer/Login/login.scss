@@ -1,0 +1,86 @@
+@use '../../../scss/' as *;
+
+.block-login{
+    margin: 100px auto 100px;
+
+    h2{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 76px;
+
+        margin-bottom: 16px;
+        color: $green-color;
+        text-align: center;
+    }
+
+    span{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $green-color;
+        display: block;
+    }
+
+    .login-form{
+        margin: 80px auto auto;
+        max-width: 920px;
+        text-align: center;
+
+        &-input{
+            margin-bottom: 45px;
+            position: relative;
+
+            input{
+                background-color: $turquoise-color;
+                border: none;
+                height: 60px;
+                width: 100%;
+                padding: 0 0 0 30px;
+
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                border-radius: 10px;
+                color: $green-color;
+
+                &::placeholder {
+                    color: $green-color;
+                }
+
+                &:focus{
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            svg{
+                position: absolute;
+                top: calc(50% - 8px);
+                right: 24px;
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+
+                path{
+                    fill: $green-color;
+                }
+            }
+        }
+
+        &-btn{
+            input{
+                background-color: $green-color;
+                border: none;
+                height: 60px;
+
+                width: 100%;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                color: $white-color;
+            }
+        }
+    }
+}

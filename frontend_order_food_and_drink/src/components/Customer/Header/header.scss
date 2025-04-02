@@ -1,0 +1,147 @@
+@use '../../../scss/' as *;
+
+.header{
+    background-color: $green-color;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    &__logo {
+        font-family: 'Squada One', cursive;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 20px;
+        letter-spacing: -0.012em;
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: pointer;
+
+        &:hover{
+            color: $yellow-color;
+        }
+    }
+   
+    &__feature {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        svg {
+            path {
+                stroke: #FFFFFF;
+            }
+            &:hover {
+                path {
+                    stroke: #F3BA00;
+                }
+            }
+        }
+        &-cart {
+            position: relative;
+            cursor: pointer;
+
+            .quantity-cart-items{
+                position: absolute;
+                top: -14px;
+                right: -18px;
+                background-color: $yellow-color;
+                
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                text-align: center;
+                color: $white-color;
+            }
+        }
+
+        &-login{
+            a{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                letter-spacing: -0.012em;
+                color: $white-color;
+                text-decoration: none;
+                
+                &:hover{
+                    color: $yellow-color;
+                }
+            }
+
+            span{
+                color: $white-color;
+                margin: 0 4px;
+            }
+        }
+
+        &-user{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            color: $white-color;
+            position: relative;
+
+            .header__user-dropdown{
+                display: none;
+                position: absolute;
+                top: 36px;
+                right: 0;
+                background-color: $white-color;
+                min-width: 196px;
+                border-radius: 10px;
+
+                ul{
+                    padding: 0;
+                    margin: 15px 0;
+
+                    li{
+                        list-style: none;
+                        margin: 10px 10px;
+
+                        &:nth-child(2){
+                            margin: 10px 10px;
+                        }
+
+                        &:hover{
+                            background-color: $yellow-color;
+                            border-radius: 5px;
+                        }
+                        
+                        a{
+                            width: 100%;
+                            display: block;
+                            text-decoration: none;
+                            font-family: 'ABeeZee', sans-serif;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: $black-color;
+                            padding: 10px 10px;
+                        }
+                    }
+                }
+            }
+
+            &::after{
+                position: absolute;
+                content: ""; 
+                top: 16px;
+                left: -2px;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+            }
+
+            &:hover{
+                color: $yellow-color;
+                cursor: pointer;
+            }
+            
+            &:hover>.header__user-dropdown{
+                display: block !important;
+            }
+        }
+    }
+}

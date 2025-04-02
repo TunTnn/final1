@@ -1,0 +1,81 @@
+@use './scss/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Inter:wght@300;400;500;600;700;800&family=Mulish:wght@300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Inter:wght@300;400;500;600;700;800&family=Lexend+Deca:wght@300;400;500;600;700;800&family=Mulish:wght@300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'ABeeZee';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 71px;
+  color: $white-color;
+}
+
+h2{
+  font-family: 'ABeeZee';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $heading-color;
+  letter-spacing: -0.012em;
+}
+
+p{
+  font-family: 'ABeeZee';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+}
+
+#root{
+  background-color: $bg-home;
+  position: relative;
+}
+.container{
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
+}
+.main-content{
+  margin-left: 250px;
+  transition: all 0.4s ease;
+  background-color: #f6f7fd;
+}
+
+.block-content{
+  padding: 30px 36px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.background-radius{
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+  border-radius: 20px;
+}
+
+.title-admin{
+  font-size: 24px;
+  color: #212B36;
+  margin:0 0 0 20px;
+}

@@ -1,0 +1,29 @@
+@use '../../../scss/' as *;
+
+.block-product{
+    padding-top: 105px;
+
+    h2{
+        margin-bottom: 16px;
+    }
+    
+    .btn-see-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: fit-content;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.012em;
+        color: $gray-color;
+
+        border: 1px solid #F3BA00;
+        padding: 10px 20px;
+        margin: 0 auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

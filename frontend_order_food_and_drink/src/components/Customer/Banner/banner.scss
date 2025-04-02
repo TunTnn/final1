@@ -1,0 +1,73 @@
+@use '../../../scss/' as *;
+
+.banner{
+    // height: 720px;
+    background-color: $green-color;
+    padding: 45px 0 80px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+
+    }
+    * {
+        font-family: 'ABeeZee', sans-serif;
+    }
+    &__content {
+        width: 50%;
+        height: fit-content;
+        align-self: center;
+        &__title {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 71px;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+        &__desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.012em;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+        &__search-box {
+            form{
+                display: flex;
+                align-items: center;
+            }
+            input {
+                width: 398px;
+                height: 58px;
+                background: #FFFFFF;
+                border-radius: 10px 0 0 10px;
+                padding: 20px;
+                border: none;
+            }
+        }
+        &__btn {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.012em;
+            height: 58px;
+            text-align: center;
+    
+            width: 125px;
+            line-height: 58px;
+            margin-left: -10px;
+            color: #FFFFFF;
+            background: #F3BA00;
+            border-radius: 0px 10px 10px 0px;
+            border: none;
+        }
+    }
+    &__image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}

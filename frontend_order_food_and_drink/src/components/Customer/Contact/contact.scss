@@ -1,0 +1,85 @@
+@use '../../../scss/' as *;
+
+.block-contact{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+    .contact-form{
+        width: 100%;
+
+        &-head{
+            margin-bottom: 32px;
+
+            h3{
+                font-style: italic;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: -0.012em;
+                color: $heading-color;
+                margin-bottom: 6px;
+            }
+    
+            span{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: -0.012em;
+                color: $heading-color;
+            }
+        }
+
+        &-group{
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        textarea, input{
+            border: none;
+            height: 60px;
+            width: 100%;
+            padding: 0 0 0 30px;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            border-radius: 10px;
+            color: $gray-color;
+
+            &::placeholder {
+                color: $gray-color;
+            }
+
+            &:focus{
+                border: none;
+                outline: none;
+            }
+        }
+
+        textarea{
+            height: 215px;
+            padding-top: 20px;
+        }
+
+        .btn-contact{
+            text-align: end;
+            margin-top: 24px;
+
+            input{
+                background-color: $green-color;
+                border: none;
+                height: 60px;
+                padding: 16px 20px;
+
+                width: fit-content;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+                color: $white-color;
+            }
+        }
+    }
+}

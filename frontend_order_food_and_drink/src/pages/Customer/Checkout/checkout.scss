@@ -1,0 +1,131 @@
+@use '../../../scss/' as *;
+
+.block-checkout{
+    padding: 105px 0 100px;
+
+    .checkout-title{
+        background-color: $white-color;
+        width: 100%;
+        margin-bottom: 64px;
+
+        h2{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: $black-color;
+            padding: 16px 0;
+            text-align: center;
+        }
+    }
+
+    .checkout-content{
+        background-color: $white-color;
+
+        table{
+            thead{
+                tr{
+                    border-bottom: 0.5px solid $gray-color;
+                }
+            }
+            th{
+                font-size: 20px;
+                padding: 30px 40px;
+            }
+
+            td{
+                padding: 20px 40px;
+                text-align: left;
+            }
+
+            span{
+                font-size: 18px;
+            }
+
+            img{
+                margin-right: 30px;
+            }
+        }
+
+        .checkout-group{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            margin-top: 80px;
+
+            .checkout-payment{
+                label{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: $text-color;
+                    margin-bottom: 30px;
+                }
+
+                select{
+                    background-color: $turquoise-color;
+                    border: none;
+                    height: 60px;
+                    width: 100%;
+                    border-radius: 10px;
+                    min-width: 378px;
+            
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: $green-color;
+                    padding: 0 30px;
+                    margin-bottom: 30px;
+            
+                    &:before{
+                        left: 0;
+                        top: 0;
+                    }
+            
+                    &:focus{
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+
+            .checkout-box{
+                .box-group{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+
+                    label, span{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: $text-color;
+                    }
+
+                    .title-order, .price-order{
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 38px;
+                        color: $text-color;
+                    }
+                }
+                hr{
+                    margin-bottom: 30px;
+                }
+
+                .btn-checkout{
+                    background-color: $green-color;
+                    border: none;
+                    border-radius: 10px;
+                    height: 60px;
+                    min-width: 378px;
+
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

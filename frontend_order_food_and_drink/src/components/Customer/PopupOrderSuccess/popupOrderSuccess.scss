@@ -1,0 +1,72 @@
+@use '../../../scss/' as *;
+
+.modal__success{
+    .modal-dialog{
+        max-width: 500px;
+    }
+    .modal-header, .modal-footer{
+        padding: 30px 30px;
+        border: none;
+
+        .modal-title{
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 38px;
+            color: $green-color;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn-success-close{
+            border: none;
+        }
+    }
+
+    .modal-body{
+        padding: 0;
+        margin: 0 auto;
+
+        svg{
+            width: 120px;
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+    }
+
+    .modal-footer{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+
+        a{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: -0.02em;
+
+            border-radius: 10px;
+            padding: 10px 20px;
+            max-width: 175px;
+            color: $white-color;
+            text-decoration: none;
+        }
+
+        .btn-success-follow{
+            background: #1AC073;
+        }
+
+        .btn-success-continue{
+            background: #F3BA00;
+
+        }
+    }
+}

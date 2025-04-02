@@ -1,0 +1,59 @@
+@use '../../../scss/' as *;
+
+table{
+    th{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: $text-cart;
+
+        &:last-child{
+            text-align: center;
+        }
+    }
+
+    tr{
+        border-color: $quantity-cart;
+    }
+
+    td{
+        vertical-align: middle;
+        padding: 20px 10px 20px;
+        
+        button{
+            border: none;
+            background-color: unset;
+        }
+
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: $text-cart;
+        }
+
+        img{
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .product-quantity{
+            display: block;
+            text-align: center;
+        }
+
+        .product-action{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &-update:hover{
+                color: $green-color;
+            }
+
+            &-delete:hover{
+                color: $red-color;
+            }
+        }
+    }
+}
